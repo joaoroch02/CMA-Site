@@ -1,0 +1,37 @@
+:root{
+    --cor-fundo: rgb(0, 38, 255);
+    --cor-primaria: rgb(206, 222, 241);
+    --cor-hover: rgb(255, 155, 23);
+}
+.dp-down ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    position: relative;
+}
+.dp-down ul li{
+    display: inline-block;
+}
+.dp-down ul li a{
+    display: inline-block;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 10px;
+}
+.dp-down ul li a:hover{
+    color: var(--cor-hover);
+
+}
+
+/*SUB MENU*/
+.dp-down ul ul{
+    display: none;
+    position: absolute;
+    width: 150px;
+}
+.dp-down ul li:hover ul{
+    display: block;
+}
+.dp-down ul ul li a{
+    display: block;
+}
